@@ -21,6 +21,7 @@ group :development, :test do
   gem 'debug' # will be included in ruby 3.1
   gem 'rspec-rails'
   gem 'rubocop-rails'
+  gem 'rubocop-rspec'
 end
 
 group :development do
