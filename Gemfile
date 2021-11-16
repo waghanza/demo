@@ -14,6 +14,9 @@ gem 'pg', '~> 1.2.3'
 # Puma
 gem 'puma', '~> 5.5.2'
 
+# TODO check if really required
+gem 'turbolinks'
+
 group :development, :test do
   gem 'debug' # will be included in ruby 3.1
   gem 'rubocop-rails'

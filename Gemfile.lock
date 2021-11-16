@@ -166,6 +166,9 @@ GEM
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
     thor (1.1.0)
+    turbolinks (5.2.1)
+      turbolinks-source (~> 5.2)
+    turbolinks-source (5.2.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.1.0)
@@ -186,6 +189,7 @@ DEPENDENCIES
   rubocop-rails
   spring
   spring-watcher-listen
+  turbolinks
 
 RUBY VERSION
    ruby 3.0.2p107
