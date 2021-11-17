@@ -10,3 +10,12 @@ Style/Documentation:
 
 Rails/HasManyOrHasOneDependent:
   Enabled: false
+
+RSpec/NamedSubject:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
