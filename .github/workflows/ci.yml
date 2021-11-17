@@ -33,4 +33,4 @@ jobs:
           bundle exec rake db:seed
           bundle exec rspec
         env:
-          DATABASE_URL: localhost
+          DATABASE_HOST: localhost
