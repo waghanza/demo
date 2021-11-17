@@ -10,15 +10,16 @@ jobs:
     services:
       postgres:
         image: postgres
+        ports:
+          - 5432:5432
         env:
+          POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
         options: >-
           --health-cmd pg_isready
           --health-interval 10s
           --health-timeout 5s
           --health-retries 5
-        ports:
-          - 5432:5432
 
     steps:
       - uses: actions/checkout@v2
@@ -28,11 +29,16 @@ jobs:
       - name: Check code consistency
         run: bundle exec rubocop
       - name: Setup database
-        run: bundle exec rake db:prepare
+        run: |
+          bundle exec rake db:create
+          bundle exec rake db:migrate
+          bundle exec rake db:seed
         env:
           RAILS_ENV: test
           DATABASE_HOST: localhost
+          DATABASE_PASSWORD: postgres
       - name: Integration tests
         run: bundle exec rspec
         env:
           DATABASE_HOST: localhost
+          DATABASE_PASSWORD: postgres
