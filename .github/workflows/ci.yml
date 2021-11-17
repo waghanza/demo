@@ -27,10 +27,12 @@ jobs:
           bundler-cache: true
       - name: Check code consistency
         run: bundle exec rubocop
+      - name: Setup database
+        run: bundle exec rake db:prepare
+        env:
+          RAILS_ENV: test
+          DATABASE_HOST: localhost
       - name: Integration tests
-        run: |
-          bundle exec rake db:create
-          bundle exec rake db:seed
-          bundle exec rspec
+        run: bundle exec rspec
         env:
           DATABASE_HOST: localhost
