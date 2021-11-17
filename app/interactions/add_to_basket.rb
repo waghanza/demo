@@ -8,7 +8,7 @@ class AddToBasket < ActiveInteraction::Base
   def execute
     number.times { basket.items << Item.create(product: product) } # TODO: try to eager load
     count = basket.items.select { |item| item.product == product }.count
-    basket.increment!(:price, discount(product, count))
+    basket.increment(:price, discount(product, count))
   end
 
   private

@@ -76,6 +76,7 @@ GEM
       reline (>= 0.2.7)
     diff-lcs (1.4.4)
     erubi (1.10.0)
+    execjs (2.8.1)
     factory_bot (6.2.0)
       activesupport (>= 5.0.0)
     factory_bot_rails (6.2.0)
@@ -198,8 +199,13 @@ GEM
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
     thor (1.1.0)
+    turbolinks (5.2.1)
+      turbolinks-source (~> 5.2)
+    turbolinks-source (5.2.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
+    uglifier (4.2.0)
+      execjs (>= 0.3.0, < 3)
     unicode-display_width (2.1.0)
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
@@ -223,6 +229,8 @@ DEPENDENCIES
   rubocop-rspec
   spring
   spring-watcher-listen
+  turbolinks
+  uglifier
 
 RUBY VERSION
    ruby 3.0.2p107

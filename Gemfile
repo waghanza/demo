@@ -17,6 +17,10 @@ gem 'puma', '~> 5.5.2'
 # Properly handle BL
 gem 'active_interaction', '~> 4.0.6'
 
+# TODO: check if really required
+gem 'turbolinks'
+gem 'uglifier'
+
 group :development, :test do
   gem 'database_cleaner-active_record'
   gem 'debug' # will be included in ruby 3.1
