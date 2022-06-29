@@ -15,7 +15,7 @@ gem 'pg', '~> 1.2.3'
 gem 'puma', '~> 5.5.2'
 
 # Properly handle BL
-gem 'active_interaction', '~> 4.0.6'
+gem 'active_interaction', '~> 5.0.0'
 
 # TODO: check if really required
 gem 'turbolinks'
