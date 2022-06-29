@@ -12,7 +12,7 @@ gem 'rails', '~> 6.1.4'
 gem 'pg', '~> 1.2.3'
 
 # Puma
-gem 'puma', '~> 5.5.2'
+gem 'puma', '~> 5.6.0'
 
 # Properly handle BL
 gem 'active_interaction', '~> 4.0.6'
