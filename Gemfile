@@ -9,7 +9,7 @@ ruby '~> 3.0'
 gem 'rails', '~> 6.1.4'
 
 # PostgeSQL
-gem 'pg', '~> 1.2.3'
+gem 'pg', '~> 1.4.0'
 
 # Puma
 gem 'puma', '~> 5.5.2'
